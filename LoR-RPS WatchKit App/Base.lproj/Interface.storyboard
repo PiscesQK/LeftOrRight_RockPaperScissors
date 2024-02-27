@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="21507" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch45"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="21501"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="LoR_RPS_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="0.29999999999999999" alignment="left" id="CQH-Oe-LOM">
+                            <items>
+                                <imageView width="0.33000000000000002" widthAdjustment="1" height="1" alignment="left" id="8Qf-eS-a4T"/>
+                                <imageView width="0.33000000000000002" widthAdjustment="1" height="1" alignment="left" id="lRF-8z-Voo"/>
+                                <imageView width="0.33000000000000002" widthAdjustment="1" height="1" alignment="left" id="Jhq-VJ-ybk"/>
+                            </items>
+                        </group>
+                        <group width="1" height="0.29999999999999999" alignment="left" id="3aW-EE-eg2">
+                            <items>
+                                <imageView width="0.33000000000000002" widthAdjustment="1" height="1" alignment="left" id="kwR-R4-0Bz"/>
+                                <imageView width="0.33000000000000002" widthAdjustment="1" height="1" alignment="left" id="i9p-tZ-p3C">
+                                    <gestureRecognizers>
+                                        <swipeGestureRecognizer id="adb-yS-zFI">
+                                            <connections>
+                                                <action selector="chooser:" destination="AgC-eL-Hgc" id="6km-Ix-YYd"/>
+                                            </connections>
+                                        </swipeGestureRecognizer>
+                                        <swipeGestureRecognizer direction="2" id="ZzY-Rb-jlQ">
+                                            <connections>
+                                                <action selector="choosel:" destination="AgC-eL-Hgc" id="qRM-Pd-PnY"/>
+                                            </connections>
+                                        </swipeGestureRecognizer>
+                                    </gestureRecognizers>
+                                </imageView>
+                                <imageView width="0.33000000000000002" widthAdjustment="1" height="1" alignment="left" id="4yD-dz-eln"/>
+                            </items>
+                        </group>
+                        <group width="1" height="0.29999999999999999" alignment="left" id="ctx-8z-GMR">
+                            <items>
+                                <imageView width="0.33000000000000002" widthAdjustment="1" height="1" alignment="left" image="jd1" id="TU8-MC-wOD">
+                                    <gestureRecognizers>
+                                        <swipeGestureRecognizer direction="4" id="3yn-D2-dWc">
+                                            <connections>
+                                                <action selector="jd:" destination="AgC-eL-Hgc" id="Xfx-FX-rER"/>
+                                            </connections>
+                                        </swipeGestureRecognizer>
+                                        <tapGestureRecognizer id="4bj-sv-Lfp">
+                                            <connections>
+                                                <action selector="tapjd:" destination="AgC-eL-Hgc" id="6ZI-7n-eq1"/>
+                                            </connections>
+                                        </tapGestureRecognizer>
+                                    </gestureRecognizers>
+                                </imageView>
+                                <imageView width="0.33000000000000002" widthAdjustment="1" height="1" alignment="left" image="st1" id="XfY-eC-nqs">
+                                    <gestureRecognizers>
+                                        <swipeGestureRecognizer direction="4" id="0fu-3c-73h">
+                                            <connections>
+                                                <action selector="st:" destination="AgC-eL-Hgc" id="6I3-bb-c8N"/>
+                                            </connections>
+                                        </swipeGestureRecognizer>
+                                        <tapGestureRecognizer id="dcx-TX-xzU">
+                                            <connections>
+                                                <action selector="tapst:" destination="AgC-eL-Hgc" id="1jj-Yr-EHS"/>
+                                            </connections>
+                                        </tapGestureRecognizer>
+                                    </gestureRecognizers>
+                                </imageView>
+                                <imageView width="0.33000000000000002" widthAdjustment="1" height="1" alignment="left" image="bu1" id="Rto-pZ-r3w">
+                                    <gestureRecognizers>
+                                        <swipeGestureRecognizer direction="4" id="92s-Jk-dBD">
+                                            <connections>
+                                                <action selector="bu:" destination="AgC-eL-Hgc" id="hcH-Bb-73n"/>
+                                            </connections>
+                                        </swipeGestureRecognizer>
+                                        <tapGestureRecognizer id="9O0-yb-vEs">
+                                            <connections>
+                                                <action selector="tapbu:" destination="AgC-eL-Hgc" id="EyW-xu-wvz"/>
+                                            </connections>
+                                        </tapGestureRecognizer>
+                                    </gestureRecognizers>
+                                </imageView>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="blImg" destination="TU8-MC-wOD" id="O3K-f1-hqs"/>
+                        <outlet property="bmImg" destination="XfY-eC-nqs" id="hbO-cR-E9X"/>
+                        <outlet property="brImg" destination="Rto-pZ-r3w" id="JiX-Ty-ZZq"/>
+                        <outlet property="mlImg" destination="kwR-R4-0Bz" id="OMH-rz-Hu3"/>
+                        <outlet property="mmImg" destination="i9p-tZ-p3C" id="dOb-0k-VX7"/>
+                        <outlet property="mrImg" destination="4yD-dz-eln" id="WK7-Ux-AAR"/>
+                        <outlet property="tlImg" destination="8Qf-eS-a4T" id="rK7-vW-epQ"/>
+                        <outlet property="tmImg" destination="lRF-8z-Voo" id="xi4-m4-wcQ"/>
+                        <outlet property="trImg" destination="Jhq-VJ-ybk" id="vjO-E9-tQb"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="LoR_RPS_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="LoR_RPS_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="345"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bu1" width="160" height="160"/>
+        <image name="jd1" width="160" height="160"/>
+        <image name="st1" width="160" height="160"/>
+    </resources>
+</document>
